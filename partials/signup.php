@@ -23,16 +23,16 @@ if($_SERVER['REQUEST_METHOD']=='POST' && $_POST['work']=='signup'){
                           if($result)$salert=true;
                         // echo var_dump($salert);
                          // echo 'u';
-                        header("location:http://localhost/gphpt/gforum/index.php?signup=true");
+                       header("location:https://gform-code.000webhostapp.com/index.php?signup=true");
                          exit;
                   }
                   else
                   $showError="password donot match";
                   echo 'pd';
-                header("location:http://localhost/gphpt/gforum/index.php?signup=false&error=$showError");
+                header("location:https://gform-code.000webhostapp.com/index.php?signup=false&error=$showError");
             }
             echo $showError;
-          header("location:http://localhost/gphpt/gforum/index.php?signup=false&error=$showError");
+          header("location:https://gform-code.000webhostapp.com/index.php?signup=false&error=$showError");
 }?>
 
 

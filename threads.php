@@ -99,7 +99,7 @@
 
 
           echo'  <div class="media my-2">
-        <img src="download.jpg" width= "50px"class="mr-3" alt="...">
+        <img src="./img/download.jpg" width= "50px"class="mr-3" alt="...">
         <div class="media-body">
           
 

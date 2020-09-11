@@ -1,6 +1,4 @@
 <?php
-session_start();
-//always session_start() at top and all file after that 😥😥😥
 $loggin=false;
      $salert=false;
      $showError=false;
@@ -51,25 +49,18 @@ echo '
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        catagory
+       Top catagory
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Something else here</a>
+        <a class="dropdown-item" href="threadsList.php?catid=1">Python</a>
+        <a class="dropdown-item" href="threadsList.php?catid=2">Javascript</a>
       </div>
     </li>
-    <li class="nav-item">
-      <a class="nav-link " href="contactus.php"  >contact</a>
-    </li>
+   
   </ul>
   
   <div class="mx-2 row">
-  <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn  btn-success my-2 my-sm-0" type="submit">Search</button>
-        </form>';
+ ';
   if(!$loggin){echo'
       <button class="btn  btn-outline-success ml-2" data-toggle="modal" data-target="#loginModal">login</button>
       <button class="btn btn-outline-success mx-2 "  data-toggle="modal" data-target="#signupModal">signup</button>';}

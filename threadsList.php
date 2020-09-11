@@ -110,7 +110,7 @@
                   $userid=$row['thread_user_id'];
                     $available_question=true;
                         echo'  <div class="media my-2  " >
-                        <img src="download.jpg" width= "50px"class="mr-3" alt="...">
+                        <img src="./img/download.jpg" width= "50px"class="mr-3" alt="...">
                         <div class="media-body m--5">
 
                             <h5 class="m-0 p-0" style="font-size: 0.8rem; "><a href="threads.php?threadid='.$id.'">'.$title.'</a></h5>
