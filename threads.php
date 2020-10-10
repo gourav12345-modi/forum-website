@@ -1,3 +1,8 @@
+<?php  
+if(!isset($_SESSION)){
+session_start();}
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -84,7 +89,7 @@
             <button type="submit" class="btn btn-success">Submit</button>
         </form>';
         }
-        else echo"logim to share you'r answer";
+        else echo"login to share you'r answer";
         ?>
 
         <?php       

@@ -23,16 +23,16 @@ if($_SERVER['REQUEST_METHOD']=='POST' && $_POST['work']=='signup'){
                           if($result)$salert=true;
                         // echo var_dump($salert);
                          // echo 'u';
-                       header("location:https://gform-code.000webhostapp.com/index.php?signup=true");
+                       header("location:../index.php?signup=true");
                          exit;
                   }
                   else
-                  $showError="password donot match";
-                  echo 'pd';
-                header("location:https://gform-code.000webhostapp.com/index.php?signup=false&error=$showError");
+                  $showError="password and confirm password donot match";
+                //   echo 'pd';
+                header("location:../index.php?signup=false&error=$showError");
             }
             echo $showError;
-          header("location:https://gform-code.000webhostapp.com/index.php?signup=false&error=$showError");
+         header("location:../index.php?signup=false&error=$showError");
 }?>
 
 
@@ -64,10 +64,7 @@ if($_SERVER['REQUEST_METHOD']=='POST' && $_POST['work']=='signup'){
                         <label for="exampleInputPassword1">Confirm Password</label>
                         <input type="password" class="form-control" name="cpassword" id="exampleInputPassword1">
                     </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
+                 
                     <button type="submit" class="btn btn-primary">Submit</button>
 
                 </div>

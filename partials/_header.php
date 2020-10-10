@@ -18,10 +18,8 @@ $loggin=false;
   
   if(isset($_SESSION['loggin'])&&  $_SESSION['loggin']==true){
                 $loggin=true;
-              
-                //echo '$loggin';
-            
   }
+ 
   
   if(isset($_GET['login']) && $_GET['login']=='false'){
             $showError=$_GET['error'];

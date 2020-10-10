@@ -1,3 +1,9 @@
+<?php  
+if(!isset($_SESSION)){
+session_start();}
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -62,7 +68,7 @@
 
 
 
-    <div class="container">
+    <div class="container" style="min-height: 100vh;">
         <h2 class="text-center my-3">Gform-catagory</h2>
         <div class="jumbotron">
             <h1 class="display-4"><?php  echo $tname ?></h1>
